@@ -14,6 +14,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - name: Print GITHUB_BRANCH
-      run: GITHUB_BRANCH - ${{ env.GITHUB_BRANCH }}
+      run: echo GITHUB_BRANCH - ${{ env.GITHUB_BRANCH }}
     - name: Print GITHUB_BRANCH_NAME_WITHOUT_SLASH
-      run: GITHUB_BRANCH_NAME_WITHOUT_SLASH - ${{ env.GITHUB_BRANCH_NAME_WITHOUT_SLASH }}
+      run: echo GITHUB_BRANCH_NAME_WITHOUT_SLASH - ${{ env.GITHUB_BRANCH_NAME_WITHOUT_SLASH }}
