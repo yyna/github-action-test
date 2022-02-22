@@ -8,6 +8,7 @@ on:
 env:
   GITHUB_BRANCH: ${{ github.event.ref }}
   GITHUB_BRANCH_NAME_WITHOUT_SLASH: ${GITHUB_BRANCH##*/}
+  GITHUB_REF: ${GITHUB_REF##*/}
 
 jobs:
   info:
