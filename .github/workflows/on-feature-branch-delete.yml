@@ -17,3 +17,5 @@ jobs:
         run: echo GITHUB_BRANCH - ${{ env.GITHUB_BRANCH }}
       - name: Print GITHUB_BRANCH_NAME_WITHOUT_SLASH
         run: echo GITHUB_BRANCH_NAME_WITHOUT_SLASH - ${{ env.GITHUB_BRANCH_NAME_WITHOUT_SLASH }}
+      - name: Print GITHUB_REF
+        run: echo GITHUB_REF - ${{ env.GITHUB_REF }}
