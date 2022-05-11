@@ -1,0 +1,25 @@
+name: Integration Test - farmmorning-backend
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - uses: DeLaGuardo/setup-clojure@5.1
+        with:
+          cli: 1.11.1
+
+      - name: Check clojure version
+        run: clojure --version
+
+      - name: Run clojure
+        run: clojure -e "(println 123)"
