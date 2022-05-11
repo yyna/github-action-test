@@ -1,4 +1,4 @@
-name: Integration Test - farmmorning-backend
+name: Clojure Version
 
 on:
   workflow_dispatch:
